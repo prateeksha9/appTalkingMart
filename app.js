@@ -60,6 +60,6 @@ app.command("/hello", async ({ command, ack, say, event }) => {
 
 (async () => {
   // Start your app
-  await app.start(process.env.PORT || port);
+  await app.listen(process.env.PORT || port);
   console.log(`⚡️ Slack Bolt app is running on port ${port}!`);
 })();
