@@ -3,11 +3,11 @@ require("dotenv").config();
 const port = process.env.PORT || 3000;
 
 const app = new App({
-  token: ${process.env.bot_token},
-  signingSecret: ${process.env.signing_secret},
+  token: process.env.bot_token,
+  signingSecret: process.env.signing_secret,
   socketMode: true,
   appToken:
-    ${process.env.app_token},
+    process.env.app_token,
 });
 
 app.command("/hello", async ({ command, ack, say, event }) => {
