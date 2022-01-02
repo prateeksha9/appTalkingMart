@@ -1,0 +1,23 @@
+GET http://localhost:8000/ HTTP/1.1
+
+### POST http://localhost:8000/v1/products/create HTTP/1.1 Content-Type: application/x-www-form-urlencoded
+
+name=caty &quantity=10
+
+### DELETE http://localhost:8000/v1/products/614fe49a542d64f2de7be1bf HTTP/1.1
+
+### POST http://localhost:8000/v1/products/615a62eb61df2d14c3a802df/update_quantity/?number=100 HTTP/1.1
+
+### **** DEPLYMENT TEST ******* GET https://ecommerce-api-application.herokuapp.com/v1/products HTTP/1.1
+
+### POST https://ecommerce-api-application.herokuapp.com/v1/products/create HTTP/1.1 Content-Type: application/x-www-form-urlencoded
+
+name=key &quantity=50
+
+### DELETE https://ecommerce-api-application.herokuapp.com/v1/products/614fe49a542d64f2de7be1bf HTTP/1.1
+
+POST http://localhost:8000/helloworld HTTP/1.1
+
+
+
+
