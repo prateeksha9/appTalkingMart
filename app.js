@@ -2,11 +2,11 @@ const { App } = require("@slack/bolt");
 require("dotenv").config();
 
 const app = new App({
-  token: "xoxb-2919951544608-2881837595367-E4cFGPdvCL1zbH7myp4pNQD5",
-  signingSecret: "cbad69c800b3c3c2e8ceabb6595df855",
+  token: ${process.env.bot_token},
+  signingSecret: ${process.env.signing_secret},
   socketMode: true,
   appToken:
-    "xapp-1-A02SCD45ZMY-2891247780694-921b7ed6fcc2067dd0bfe1b3a52a1935d4ba30026d654b90373f4c11bbb100e7",
+    ${process.env.app_token},
 });
 
 app.command("/hello", async ({ command, ack, say, event }) => {
